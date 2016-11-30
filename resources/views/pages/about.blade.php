@@ -36,12 +36,10 @@
         </style>
     </head>
     <body>
-        @unless (empty($people))
-            There are some people.
-        @endunless
-
-        @foreach ($people as $person)
-            <li>{{$person}}</li>
-        @endforeach
+        <div class="container">
+            <div class="content">
+                <div class="title">About page here</div>
+            </div>
+        </div>
     </body>
 </html>

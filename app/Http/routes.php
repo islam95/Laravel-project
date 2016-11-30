@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$people = ['Islam', 'Dudaev', 'Wolf'];
+
+    return view('welcome', compact('people'));
 });
 
 Route::get('about', function(){
-	return view('about'); // resources/views/about
+	return view('pages.about'); // resources/views/pages/about.blade.php
 });
